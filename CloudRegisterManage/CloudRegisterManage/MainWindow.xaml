@@ -1,0 +1,73 @@
+﻿<Window xmlns:CloudRegisterManage="clr-namespace:CloudRegisterManage"  
+        x:Class="CloudRegisterManage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CloudRegisterManage"
+        xmlns:ui="clr-namespace:CloudRegisterManage.UI"
+        mc:Ignorable="d"  MinWidth="1080" MinHeight="640" 
+        Title="云注册管理" Height="660" Width="1000" WindowStartupLocation="CenterScreen" Icon="Resources/CloudReg.ico" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="#FF4A98CF">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <TextBlock Text="云注册管理" Foreground="White" FontSize="16" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnHelp" Grid.Column="2" Style="{StaticResource MenuButton}" Click="btnHelp_Click" >
+                    <Button.Content>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="帮助"></TextBlock>
+                    </Button.Content>
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Background="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160"></ColumnDefinition>
+                <ColumnDefinition Width="49*"></ColumnDefinition>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Name="funcPanel" Orientation="Vertical" Background="#FF343B3C">
+                <ui:ListMenuButton  Title="注册产品"  x:Name="regProduct" Height="40" />
+                <ui:ListMenuButton  Title="查看特征码"  x:Name="showHardCode" Height="40" />
+                <ui:ListMenuButton  Title="导入许可"  x:Name="importLic" Height="40" />
+                <ui:ListMenuButton  Title="分配许可"  x:Name="AssignLic" Height="40" />
+                <ui:ListMenuButton  Title="备份许可"  x:Name="backupLic" Height="40" />
+                <ui:ListMenuButton  Title="查看许可占用情况"  x:Name="showLicUseInfo" Height="40" />
+                <ui:ListMenuButton  Title="用户对照表"  x:Name="userCompare" Height="40" />
+                <ui:ListMenuButton  Title="自助服务"  x:Name="selfService" Height="40" />
+            </StackPanel>
+
+            <Grid Name="moduleGrid" Grid.Column="1" Margin="10" Grid.ColumnSpan="2">
+                <CloudRegisterManage:RegProduct />
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

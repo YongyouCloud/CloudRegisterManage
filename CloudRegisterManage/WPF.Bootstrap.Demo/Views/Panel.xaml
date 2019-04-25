@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="WPF.Bootstrap.Demo.Views.Panel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:bootstrap="http://github.com/scheshan/bootstrap"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <bootstrap:BootstrapPanel Margin="10" Type="Default" Header="Default Panel">
+            <TextBlock>content</TextBlock>
+            <bootstrap:BootstrapPanel.Footer>
+                <TextBlock>footer</TextBlock>
+            </bootstrap:BootstrapPanel.Footer>
+        </bootstrap:BootstrapPanel>
+        
+        <bootstrap:BootstrapPanel Margin="10" Grid.Column="1" Type="Primary" Header="Primary Panel">
+            <TextBlock>content</TextBlock>
+            <bootstrap:BootstrapPanel.Footer>
+                <TextBlock>footer</TextBlock>
+            </bootstrap:BootstrapPanel.Footer>
+        </bootstrap:BootstrapPanel>
+
+        <bootstrap:BootstrapPanel Type="Info" Margin="10" Grid.Row="1" Header="Info Panel">
+            <TextBlock>content</TextBlock>
+            <bootstrap:BootstrapPanel.Footer>
+                <TextBlock>footer</TextBlock>
+            </bootstrap:BootstrapPanel.Footer>
+        </bootstrap:BootstrapPanel>
+
+        <bootstrap:BootstrapPanel Type="Success" Margin="10" Grid.Row="1" Grid.Column="1" Header="Success Panel">
+            <TextBlock>content</TextBlock>
+            <bootstrap:BootstrapPanel.Footer>
+                <TextBlock>footer</TextBlock>
+            </bootstrap:BootstrapPanel.Footer>
+        </bootstrap:BootstrapPanel>
+
+        <bootstrap:BootstrapPanel Type="Warning" Margin="10" Grid.Row="2" Header="Warning Panel">
+            <TextBlock>content</TextBlock>
+            <bootstrap:BootstrapPanel.Footer>
+                <TextBlock>footer</TextBlock>
+            </bootstrap:BootstrapPanel.Footer>
+        </bootstrap:BootstrapPanel>
+
+        <bootstrap:BootstrapPanel Type="Danger" Margin="10" Grid.Row="2" Grid.Column="1" Header="Danger Panel">
+            <TextBlock>content</TextBlock>
+            <bootstrap:BootstrapPanel.Footer>
+                <TextBlock>footer</TextBlock>
+            </bootstrap:BootstrapPanel.Footer>
+        </bootstrap:BootstrapPanel>
+        
+        <bootstrap:BootstrapPanel Margin="10" Grid.Row="3" Header="Default Panel">
+            <TextBlock>panel with no footer</TextBlock>
+        </bootstrap:BootstrapPanel>
+        
+        <bootstrap:BootstrapPanel Type="Danger" Margin="10" Grid.Row="3" Grid.Column="1">
+            <TextBlock>panel with no title and footer</TextBlock>
+        </bootstrap:BootstrapPanel>
+    </Grid>
+</UserControl>

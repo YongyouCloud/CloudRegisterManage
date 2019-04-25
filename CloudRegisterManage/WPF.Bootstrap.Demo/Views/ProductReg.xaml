@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="CloudRegisterManage.Views.ProductReg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CloudRegisterManage.Views"
+             xmlns:bootstrap="http://github.com/scheshan/bootstrap"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    <Grid>
+        <bootstrap:BootstrapPanel Type="Info"  Header="注册产品">
+            <Grid HorizontalAlignment="Left" Height="auto " Margin="0,10,0,0" VerticalAlignment="Top"  >
+                <Button x:Name="button" Content="注册产品" HorizontalAlignment="Left" Margin="10,10,0,0"  Style="{StaticResource PrimaryButton}" Click="button_Click"/>
+            </Grid>
+        </bootstrap:BootstrapPanel>
+    </Grid>
+</UserControl>
