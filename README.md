@@ -63,5 +63,5 @@
 ## 自助服务
 > 通过扫描二维码或点击链接，进入服务圈获取相关服务。
 
-# 扫码注册送注册机
-[图片]
+# 扫码注册有惊喜
+![](https://github.com/YongyouCloud/CloudRegisterManage/blob/master/CloudRegisterManage/3aa8dfeac59c9fe69946c335c338d73.jpg)
