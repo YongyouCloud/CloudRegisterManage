@@ -1,7 +1,8 @@
 # 云注册管理
 ## 简介
 > 云注册管理功能是 U8V15.0 版本新增功能，集许可证书管理、许可分配、许可占用情况查询等功能为一体，方便管理员对产品授权进行管理。
-
+# 扫码注册有惊喜
+![](https://github.com/YongyouCloud/CloudRegisterManage/blob/master/CloudRegisterManage/3aa8dfeac59c9fe69946c335c338d73.jpg)
 ## 安装
 > 安装 U8 时，如果安装模式为经典模式下的全产品、服务器安装选择“加密服务器”、自定义
 安装选择“加密服务器”、全产品集中应用模式（U8 远程），安装后在当前机器的开始菜单
@@ -63,5 +64,3 @@
 ## 自助服务
 > 通过扫描二维码或点击链接，进入服务圈获取相关服务。
 
-# 扫码注册有惊喜
-![](https://github.com/YongyouCloud/CloudRegisterManage/blob/master/CloudRegisterManage/3aa8dfeac59c9fe69946c335c338d73.jpg)
